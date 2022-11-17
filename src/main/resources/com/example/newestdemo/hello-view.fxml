@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newestdemo.HelloController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="111.0" prefHeight="83.0" prefWidth="224.0" text="SHAMIFY" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Line endX="78.5" layoutX="113.0" layoutY="177.0" startX="-78.5" stroke="#fcf9f9" />
+            <Label alignment="CENTER" layoutX="7.0" layoutY="303.0" prefHeight="83.0" prefWidth="224.0" text="Copyright (c) 2022. All Rights Reserved" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutY="51.0" prefHeight="45.0" prefWidth="290.0" text="Secure Login" textFill="#111111">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Label layoutX="20.0" layoutY="121.0" text="User name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="165.0" text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EnterUserNameTextField" layoutX="100.0" layoutY="117.0" promptText="Enter User name" />
+            <PasswordField fx:id="EnterPasswordTextField" layoutX="100.0" layoutY="152.0" promptText="Enter Password" />
+            <Button fx:id="LoginButton" layoutX="20.0" layoutY="241.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="31.0" prefWidth="233.0" style="-fx-background-color: #263F73;" text="Login" textFill="WHITE" />
+            <Button fx:id="CancelButton" layoutX="19.0" layoutY="297.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="31.0" prefWidth="234.0" style="-fx-background-color: #263F73;" text="Cancel" textFill="WHITE" />
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="3.0" layoutY="87.0" prefHeight="18.0" prefWidth="284.0" textFill="#f20000" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
